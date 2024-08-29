@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>ESP SERVER</title>
+    <link rel="stylesheet" href="style.css"/>    
+</head>
+<body>
+    <div class="div sis">
+        <h1>Sistema Hogar ESPR</h1>
+        <input type="button" class="btn btnSis" id="sishabi" onclick="visibilityHidden('habitacion')" value="Habitacion" />
+        <input type="button" class="btn btnSis" id="sisSala" onclick="visibilityHidden('salaEstar')"  value="Sala de estar" />
+        <input type="button" class="btn btnSis" id="sisInst" onclick="visibilityHidden('comoEmpezar')"  value="¿Como empezar?" />
+
+    </div>
+    <div class="container">
+    <div id="habitacion" class="div hidden">
+        <h2>Control de Habitacion</h2>
+        <input type="button" class="btn displayblock" id="ventilador" value="Ventilador" />
+        <input type="button" onclick="botonLuz()" class="btn displayblock" id="luz" value="Luz" />
+        <input type="button" class="btn displayblock" id="A. acondicionado" value="A. acondicionado" />
+    </div>
+    <div id="salaEstar" class="div hidden">
+        <p class="aviso"><em><strong>Este apartado se encuentra en desarrollo. Por favor, consultar el boton "Como empezar".</strong></em></p>
+    </div>
+    <div id="comoEmpezar" class="div hidden">
+        <h2>Bienvenido a Sistema ESPR</h2>
+        <p class="context">Esta es una pagina web desarrollada por Rafael Bolivar. Esta pensada para automatizar procesos en el hogar mediante internet.<br /><br />Aun se encuentra en desarrollo, actualmente se tiene en funcionamiento el apartado "Habitacion" con el boton de "Luz" que trabaja de forma directa con el controlador principal.<br /><br />Para habilitar las opciones solo debemos dar click al boton que lo referencia, si queremos cerrar alguno de los apartados solo debemos dar click nuevamente al boton y asi desaparece la opcion de la pantalla.</p>
+    </div>
+    </div>
+    <!--<center><p class="btn"></p></center> opcion para depurar-->
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
